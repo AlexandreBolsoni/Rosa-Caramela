@@ -107,11 +107,13 @@ body {
     /* Reduz a largura da wrapper para 80% */
   }
   .envelope {
+    border-top: 35vw solid transparent;
+
     border-right: 40vw solid #ebc4db;
     /* Ajusta a espessura da borda direita */
     border-left: 40vw solid #ebc4db;
     /* Ajusta a espessura da borda esquerda */
-    border-bottom: 40vw solid #d9a4bb;
+    border-bottom: 45vw solid #d9a4bb;
     /* Ajusta a espessura da borda inferior */
     margin: 5% auto;
     /* Ajusta a margem para centralizar */
