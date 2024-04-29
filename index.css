@@ -103,19 +103,49 @@ body {
 /* Estilos para tela menor que 768px de largura */
 @media screen and (max-width: 768px) {
   .wrapper {
-    width: 80%;
+    width: 90%;
     /* Reduz a largura da wrapper para 80% */
   }
   .envelope {
-    border-top: 35vw solid transparent;
 
-    border-right: 40vw solid #ebc4db;
+
+    border-right: 25vw solid #ebc4db;
     /* Ajusta a espessura da borda direita */
-    border-left: 40vw solid #ebc4db;
+    border-left: 25vw solid #ebc4db;
     /* Ajusta a espessura da borda esquerda */
-    border-bottom: 45vw solid #d9a4bb;
+    border-bottom: 35vw solid #d9a4bb;
     /* Ajusta a espessura da borda inferior */
     margin: 5% auto;
     /* Ajusta a margem para centralizar */
   }
+}
+/* Estilos para tela menor que 575px de largura */
+@media screen and (max-width: 575px) {
+  .wrapper {
+    width: 95%;
+    /* Reduz a largura da wrapper para 90% */
+  }
+  .envelope {
+
+    border-right: 35vw solid #ebc4db;
+    border-left: 35vw solid #ebc4db;
+    border-bottom: 45vw solid #d9a4bb;
+    margin: 5% auto;
+    /* Ajusta a margem para centralizar */
+  }
+}
+@media screen and (max-width: 350px) {
+  .wrapper {
+    width: 90%;
+    /* Reduz a largura da wrapper para 90% */
+  }
+  .envelope {
+
+    border-right: 40vw solid #ebc4db;
+    border-left: 40vw solid #ebc4db;
+    border-bottom: 55vw solid #d9a4bb;
+    margin: 5% auto;
+    /* Ajusta a margem para centralizar */
+  }
+
 }
