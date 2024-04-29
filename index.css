@@ -40,10 +40,8 @@ body {
 
 /* Lid when closed */
 .lid.one {
-  border-right: 150px solid transparent;
-  border-bottom: 290px solid transparent;
-  border-left: 150px solid transparent;
-  border-top: 250px solid #fbe9ef;
+  border-bottom: 250px solid transparent;
+  border-top: 290px solid #fbe9ef;
   transform: rotateX(0deg);
   z-index: 3;
   transition-delay: 0.75s;
@@ -53,7 +51,7 @@ body {
 .clique-aqui {
   background-color: #8b5e83; /* Roxo mais escuro */
   color: white;
-  padding: 10px 20px;
+  padding: 30px 100px;
   border-radius: 5px;
   cursor: pointer;
   user-select: none;
@@ -62,17 +60,6 @@ body {
 
 .clique-aqui:hover {
   background-color: #b18aa9; /* Roxo mais claro */
-}
-
-/* Lid when opened */
-.lid.two {
-  border-right: 150px solid transparent;
-  border-bottom: 100px solid #d9a4bb; /* Roxo mais claro */
-  border-left: 150px solid transparent;
-  border-top: 150px solid transparent;
-  transform: rotateX(90deg);
-  z-index: 1;
-  transition-delay: 0.5s;
 }
 
 .envelope {
@@ -96,7 +83,7 @@ body {
   left: 50%; /* Centraliza horizontalmente */
   transform: translate(-50%, -50%); /* Centraliza a carta */
   background-color: aliceblue;
-  width: 60%; /* Largura definida */
+  width: 80%; /* Largura definida */
   max-height: 80%; /* Altura máxima definida */
   overflow-y: auto; /* Habilita rolagem vertical se necessário */
   padding: 20px;
@@ -110,4 +97,39 @@ body {
   margin-bottom: 15px;
   text-align: justify;
 }
+/* Estilos para tela maior que 768px de largura */
+@media screen and (min-width: 768px) {
+  .wrapper {
+    width: 50%;
+    /* Reduz a largura da wrapper para 50% */
+  }
 
+  .envelope {
+    border-right: 20vw solid #ebc4db;
+    /* Ajusta a espessura da borda direita */
+    border-left: 20vw solid #ebc4db;
+    /* Ajusta a espessura da borda esquerda */
+    border-bottom: 21vw solid #d9a4bb;
+    /* Ajusta a espessura da borda inferior */
+    margin: 5% auto;
+    /* Ajusta a margem para centralizar */
+  }
+}
+
+/* Estilos para tela menor que 768px de largura */
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 80%;
+    /* Reduz a largura da wrapper para 80% */
+  }
+  .envelope {
+    border-right: 40vw solid #ebc4db;
+    /* Ajusta a espessura da borda direita */
+    border-left: 40vw solid #ebc4db;
+    /* Ajusta a espessura da borda esquerda */
+    border-bottom: 42vw solid #d9a4bb;
+    /* Ajusta a espessura da borda inferior */
+    margin: 5% auto;
+    /* Ajusta a margem para centralizar */
+  }
+}
